@@ -17,7 +17,7 @@ export const customerValidatorSchema = z.object({
     lastName: z.string().min(2).max(60),
     zipCode: z
       .string()
-      .min(2)
+      .min(5)
       .max(5)
       .regex(/^[0-9]+$/),
     mail: z.string().email(),
